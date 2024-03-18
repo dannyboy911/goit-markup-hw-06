@@ -18,10 +18,15 @@ body {
   color: var(--text-color);
 }
 
+img {
+  max-width: 100%;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
   height: 72px;
   flex-grow: 0;
   padding: 24px 0px;

@@ -21,6 +21,10 @@ body {
   font-family: var(--font-family);
   color: var(--text-color);
 }
+
+img {
+  max-width: 100%;
+}
 /* aaligning header elements from right to left with display flex and other */
 .header {
   display: flex;
@@ -524,11 +528,13 @@ label {
 .input-contact input:hover {
   border-color: var(--iris);
   transition: border-color var(--transition);
+  outline: none;
 }
 
 .input-contact textarea:hover {
   border-color: var(--iris);
   transition: border-color var(--transition);
+  outline: none;
 }
 
 .input-comment {
@@ -564,6 +570,10 @@ label {
   left: 16px;
 }
 
+.input-icon:focus {
+  fill: var(--iris);
+}
+
 .agree-checkbox .checkmark {
   appearance: none;
 }
@@ -581,13 +591,13 @@ label {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agree-checkbox .icon-check:hover {
+/* .agree-checkbox .icon-check:hover {
   border-color: #2196f3;
-}
+} */
 
 .agree-checkbox .checkmark:focus + .icon-check,
 .agree-checkbox .checkmark:checked:focus + .icon-check {
-  outline: 2px solid #212121;
+  outline: none;
 }
 
 .agree-checkbox .checkmark:checked + .icon-check {
@@ -645,6 +655,11 @@ label {
 .input-email-footer {
   display: flex;
   align-items: center;
+}
+
+.input-email-footer input:hover {
+  cursor: pointer;
+  border-color: var(--iris);
 }
 
 .subscribe-svg {
