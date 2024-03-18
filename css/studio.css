@@ -30,12 +30,13 @@ img {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 72px;
   flex-grow: 0;
   padding: 24px 0px;
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
+  margin: 0 auto;
 }
 
 .header ul {
@@ -337,7 +338,7 @@ footer {
 
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .section {
@@ -571,7 +572,7 @@ label {
   left: 16px;
 }
 
-.input-icon:focus {
+.input-icon:active {
   fill: var(--iris);
 }
 
