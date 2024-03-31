@@ -285,7 +285,7 @@ button {
 }
 
 footer {
-  width: 1440px;
+  /* width: 1440px; */
   background: var(--navy-blue);
   margin: 0 auto;
 }
@@ -403,4 +403,69 @@ button {
 button:hover {
   cursor: pointer;
   transform: scale(1.04);
+}
+
+@media screen and (max-width: 428px) {
+  .header nav {
+    display: none;
+  }
+
+  .header .contact {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 16px;
+  }
+
+  .filter-buttons {
+    padding-left: 16px;
+    /* margin-top: 16px; */
+  }
+
+  .filter-buttons ul li {
+    margin-top: 16px;
+  }
+
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .footer-info > ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-info > ul {
+    gap: 72px;
+  }
+
+  .input-email-footer {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* stilizare table si device-uri peste 768px */
+@media screen and (min-width: 768px) {
+  .header {
+    padding-left: 16px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-info > ul {
+    flex-wrap: wrap;
+    margin: 0 108px;
+  }
+
+  .footer > .logo {
+    margin-left: 0px;
+  }
+}
+/* stilizare table si device-uri peste 1200px */
+@media screen and (min-width: 1200px) {
 }
